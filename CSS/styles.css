@@ -1,0 +1,221 @@
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-color-white: #ffffff;
+  --background-gray: #2f303a;
+}
+
+body {
+  font-family: 'roboto', sans-serif;
+  position: relative;
+  color: var(--primary-text-color);
+  background: var(--primary-color-white);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* ---------------------------header----------------------- */
+.logo {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 1.2;
+  color: var(--accent-color);
+}
+.logo-studio {
+  color: var(--primary-text-color);
+}
+.header {
+  max-width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* ---------------------header-nav----------------------- */
+
+.header-nav .link {
+  color: var(--primary-text-color);
+}
+.header-nav-item .link.current {
+  color: var(--accent-color);
+}
+.header-nav-item .link:hover,
+.header-nav-item .link:focus {
+  color: var(--accent-color);
+}
+.header-contact .link:hover,
+.header-contact .link:focus {
+  color: var(--accent-color);
+}
+.header-contact .link {
+  color: var(--title-text-color);
+}
+.header a,
+nav,
+ul {
+  display: inline;
+}
+.header-nav-item li {
+  display: inline;
+}
+.header-contact li {
+  display: inline;
+}
+/* ---------------------------hero------------------------ */
+.hero {
+  max-width: 1600px;
+  height: 600px;
+
+  background: var(--background-gray);
+}
+.hero-titel {
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.25;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--primary-color-white);
+}
+.hero-button {
+  cursor: pointer;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.hero-button-text {
+  font-style: inherit;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-color-white);
+}
+/* ------------------------------feature------------------------------ */
+.feature .feature-head {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.feature-paragraph {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+/*what are we doing*/
+.doing {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* ------------------------------team-----------------------------------*/
+.team {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team .team-head {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-paragraph {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+/* -----------------------------footer----------------------------------- */
+address {
+  font-style: normal;
+}
+
+.logo-footer {
+  color: var(--primary-color-white);
+}
+.footer {
+  max-width: 1600px;
+  height: 252px;
+  background: var(--background-gray);
+}
+.address-item {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+}
+
+/* ------------------------------portfolio-------------------------------- */
+.port-button-list li {
+  display: inline;
+}
+.image-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--primary-text-color);
+}
+.image-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--title-text-color);
+}
+
+.button {
+  font-style: inherit;
+  background: #f5f4fa;
+  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-color-white);
+}
