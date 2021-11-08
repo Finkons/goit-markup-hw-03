@@ -87,6 +87,7 @@ ul {
 }
 /* ---------------------------hero------------------------ */
 .hero {
+  display: inline-flexbox;
   max-width: 1600px;
   height: 600px;
 
