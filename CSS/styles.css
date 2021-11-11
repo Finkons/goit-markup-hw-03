@@ -167,7 +167,7 @@ img {
   text-transform: uppercase;
   margin: 0 auto;
 
-  color: #ffffff;
+  color: var(--primary-color-white);
 }
 .hero-button {
   display: inline-block;
@@ -215,7 +215,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--title-text-color);
 }
 /*------------------------what are we doing-----------------------------*/
 .work-img {
@@ -244,7 +244,7 @@ img {
 }
 
 .team-flex .item {
-  background: #ffffff;
+  background: var(--primary-color-white);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -350,7 +350,7 @@ address {
 }
 .card-title {
   height: 110px;
-  background: #ffffff;
+  background: var(--primary-color-white);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   border-top: 0;
@@ -364,7 +364,7 @@ address {
   margin-right: 30px;
   margin-bottom: 30px;
   box-sizing: border-box;
-  background: #ffffff;
+  background: var(--primary-color-white);
 }
 .port-gallery .gallery-element:nth-child(3n) {
   margin-right: 0;
