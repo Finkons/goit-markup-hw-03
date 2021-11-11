@@ -28,6 +28,7 @@ h6 {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -67,19 +68,18 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
+  height: 80px;
 }
 
 .header-nav-list {
   display: flex;
   margin-left: 90px;
 }
-.header-nav-list .item + .item {
-  margin-left: 40px;
+.header-nav-list .item:nth-child(-n + 2) {
+  margin-right: 50px;
 }
 .header-nav .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .logo {
@@ -101,6 +101,9 @@ img {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-nav .link {
   color: var(--primary-text-color);
@@ -149,35 +152,29 @@ img {
   height: 600px;
   background: var(--background-gray);
   text-align: center;
-  box-sizing: border-box;
+  padding: 200px 0;
+  margin: 0 auto;
 }
-.hero .hero-titel {
-  position: absolute;
+.hero-titel {
+  display: block;
   width: 696px;
   height: 120px;
-  left: 452px;
-  top: 280px;
-  right: 452px;
-  margin: auto;
   font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  margin-top: 0;
-  margin-bottom: 30px;
-
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin: 0 auto;
 
-  color: var(--primary-color-white);
+  color: #ffffff;
 }
-
 .hero-button {
   display: inline-block;
   padding: 10px, 32px;
   cursor: pointer;
 
+  margin: 0 auto;
   position: absolute;
   width: 200px;
   height: 50px;
@@ -197,10 +194,9 @@ img {
 /* ------------------------------feature------------------------------ */
 .feature {
   display: flex;
-  justify-content: space-between;
 }
-.feature .item + .item {
-  margin-left: 30px;
+.feature .item:nth-child(-n + 3) {
+  margin-right: 30px;
 }
 .feature .feature-title {
   font-weight: bold;
@@ -212,10 +208,14 @@ img {
   margin-bottom: 10px;
 }
 .feature-paragraph {
+  width: 270px;
+  height: 75px;
+
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+
+  color: #757575;
 }
 /*------------------------what are we doing-----------------------------*/
 .work-img {
@@ -239,8 +239,8 @@ img {
   display: flex;
   margin-bottom: 0;
 }
-.team-flex .item + .item {
-  margin-left: 30px;
+.team-flex .item:nth-child(-n + 3) {
+  margin-right: 30px;
 }
 
 .team-flex .item {
@@ -284,8 +284,8 @@ address {
   margin-top: 0;
 }
 .footer .logo {
-  padding-top: 60px;
-  padding-bottom: 20px;
+  padding: 0;
+  margin-bottom: 20px;
 }
 .logo-footer {
   color: var(--primary-color-white);
@@ -293,19 +293,18 @@ address {
 .footer {
   max-width: 1600px;
   background: var(--background-gray);
+  padding-left: 215px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address-item {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.address-list:last-of-type {
-  padding-bottom: 60px;
-  margin-bottom: 0;
-}
 
 .address-item:nth-child(-n + 2) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .address-link {
   color: rgba(255, 255, 255, 0.6);
@@ -331,8 +330,8 @@ address {
 }
 /* ------------------------------portfolio-------------------------------- */
 
-.port-button-list .item + .item {
-  margin-left: 8px;
+.port-button-list .item:nth-child(-n + 4) {
+  margin-right: 8px;
 }
 .port-button-list {
   display: flex;
@@ -340,10 +339,14 @@ address {
   margin-top: 0;
   margin-bottom: 50px;
 }
+.gallery-element .link {
+  display: block;
+}
 
 .port-gallery {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 0;
 }
 .card-title {
   height: 110px;
