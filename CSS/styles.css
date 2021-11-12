@@ -10,7 +10,7 @@ body {
   font-family: 'roboto', sans-serif;
   position: relative;
   max-width: 1600px;
-  margin: auto;
+  margin: 0 auto;
   color: var(--primary-text-color);
 }
 
@@ -44,7 +44,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin: 0 auto;
 }
 .visually-hidden {
   position: absolute;
@@ -62,7 +61,8 @@ img {
 
 /* ---------------------------header-nav----------------------- */
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  max-width: 1600px;
 }
 
 .header-nav {
@@ -147,16 +147,17 @@ img {
   padding-right: 15px;
 }
 /* ---------------------------hero------------------------ */
-.hero {
+
+.hero-section {
   max-width: 1600px;
   height: 600px;
   background: var(--background-gray);
+}
+.hero {
   text-align: center;
   padding: 200px 0;
-  margin: 0 auto;
 }
 .hero-titel {
-  display: block;
   width: 696px;
   height: 120px;
   font-family: Roboto;
@@ -166,6 +167,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto;
+  margin-bottom: 30px;
 
   color: var(--primary-color-white);
 }
@@ -175,7 +177,6 @@ img {
   cursor: pointer;
 
   margin: 0 auto;
-  position: absolute;
   width: 200px;
   height: 50px;
   left: 700px;
@@ -223,8 +224,8 @@ img {
   margin: 0;
   padding-bottom: 94px;
 }
-.work-img .item + .item {
-  margin-left: 30px;
+.work-img .item:nth-child(-n + 2) {
+  margin-right: 30px;
 }
 .section-title {
   font-weight: bold;
@@ -293,7 +294,6 @@ address {
 .footer {
   max-width: 1600px;
   background: var(--background-gray);
-  padding-left: 215px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
